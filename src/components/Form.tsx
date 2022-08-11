@@ -49,9 +49,7 @@ const Form = () => {
         }
     });
 
-    const { loading, status} = useFetching(form)
 
-    console.log(status)
     const handleForm = (event: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>) => {
         setForm(prev => ({
             ...prev,
